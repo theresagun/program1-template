@@ -35,3 +35,4 @@ class Starvector {
 		void printStarInfo();
 		unsigned int getCurrentNumPlanets();
 };
+#endif
