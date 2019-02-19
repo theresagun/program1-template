@@ -24,7 +24,7 @@ int Star::addPlanet() {
 		nextplanets[i] = planets[i];
 	}
 
-	Planet * new_planet = new Planet(distance, this->next_id);
+	Planet * new_planet = new Planet(distance);
 
 	nextplanets [this->current_planets] = new_planet;
 

@@ -2,10 +2,10 @@
 #include <cstdlib>
 #include <iostream>
 
-Planet::Planet(int distance, int id){
+Planet::Planet(int distance){
 	int rev = rand() % 360;
 	char types[3] = {'h', 'r', 'g'};
-	this->id = id;
+	this->id = &this;
 	this->distance = distance;
     	this->pos = rev;
 	this->type = types[rand() % 3];

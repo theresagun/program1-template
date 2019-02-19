@@ -5,11 +5,21 @@
 
 class Vector {
 	public:
-		unsigned size();
+		Vector() {
+			this->size = -1;
+			this->arr = NULL;
+		}
+		Vector(int);
+		Vector(int, Planet**);
+		unsigned size() {
+			return this->size;
+		}
+		Vector(const Vector & vec);
 		~Vector();
 		void insert (int, Planet *);
 		Planet* read(int);
 		bool remove(int);
+		Planet** arr;
 	private:
 		unsigned size;
 };

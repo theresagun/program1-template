@@ -9,12 +9,12 @@ class Planet{
 		char type;
 	public:
 		Planet(){this->id=-1;};
-		Planet(int,int);
+		Planet(int);
         	int orbit();
 
 	//Inline Getter Methods	
 	
-		int getID() {
+		long getID() {
         		return this->id;
 		}
 
